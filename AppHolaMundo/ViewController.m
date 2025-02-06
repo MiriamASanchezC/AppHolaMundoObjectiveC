@@ -11,6 +11,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [_texto setStringValue:@"Hola desde el Tec Laguna"];
 
     // Do any additional setup after loading the view.
 }
@@ -23,4 +25,11 @@
 }
 
 
+- (IBAction)limpia:(id)sender {
+    [_texto setStringValue:@""];
+}
+
+- (IBAction)saluda:(id)sender {
+    [_texto setStringValue:@"Hola iOS"];
+}
 @end
